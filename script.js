@@ -33,7 +33,9 @@
 
 // theme change 
   function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+  var bar = document.getElementsByClassName("bar");
+
 }
 

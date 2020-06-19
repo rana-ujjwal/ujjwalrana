@@ -67,11 +67,12 @@ p{
 .toggle-button .bar{
 	height: 3px;
 	width: 100%;
-	background-color: black;
-	color: white;
+	background-color: gray;
+	color: gray;
 	border-radius: 10px;
-	background-origin: 
 }
+
+
 /*---toggle button end---*/
 @media (max-width: 600px) {
 	.toggle-button{
