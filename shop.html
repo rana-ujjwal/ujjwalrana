@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ujjwal Rana - Shop</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />	
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+	<link rel="shortcut icon" type="image/png" href="img/camera-icon.png"/>
+</head>
+<body>		
+	<button id="toggle" onclick="myFunction()"><i class="fa fa-moon-o" aria-hidden="true"></i></button>    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>   
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="shop.html" class="active">SHOP</a></li>
+            </ul>
+        </div>
+    </nav>
+	<br>
+	<section class="item  content-section">
+        <h1 class="section-header">Store</h1>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">The Sisters</span>
+                <img class="shop-item-image" src="img/photography-5.jpg" alt="">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$10.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Bulaki</span>
+                <img class="shop-item-image" src="img/photography-6.jpg" alt="">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$10.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Himalayan Ninja</span>
+                <img class="shop-item-image" src="img/photography-12.jpg" alt="">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$10.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div> 
+        </div>            
+    </section>        
+    <section class="cart content-section">
+        <h1 class="section-header">Cart</h1><br>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+    <footer>
+        <p>&copy; Ujjwal Rana Photography 2020</p>
+    </footer>	
+	<script src="script.js"></script>
+	<script src="shop.js"></script>
+</body>
+</html>

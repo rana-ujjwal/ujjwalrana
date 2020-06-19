@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scaled=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Ujjwal Rana - Photography</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">	
+	<link rel="shortcut icon" type="image/png" href="img/camera-icon.png"/>	
+</head>
+<body>	
+	<button id="toggle" onclick="myFunction()"><i class="fa fa-moon-o" aria-hidden="true"></i></button>	
+	<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+	<nav class="navbar">
+		<div class="logo">
+            <a href="index.html">
+            	<img src="img/logo.png" alt="">
+            </a>
+        </div>
+		<a href="#" class="toggle-button">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</a>
+		<div class="navbar-links">
+			<ul>
+				<li><a href="index.html" class="active">HOME</a></li>	
+				<li><a href="portfolio.html">PORTFOLIO</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="shop.html">SHOP</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="slideshow-container">
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 5</div>
+	  <img src="img/photography-12.jpg" style="width:100%" alt="">
+	  <div class="text">Himalayan Ninja</div>	  
+	</div>
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 5</div>
+	  <img src="img/photography-5.jpg" style="width:100%" alt="">
+	  <div class="text">The Sisters</div>
+	</div>
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 5</div>
+	  <img src="img/photography-6.jpg" style="width:100%" alt="">
+	  <div class="text">Bulaki</div>
+	</div>
+	<div class="mySlides fade">
+	  <div class="numbertext">4 / 5</div>
+	  <img src="img/photography-10.jpg" style="width:100%" alt="">
+	  <div class="text">Langtang</div>
+	</div>	
+	<div class="mySlides fade">
+	  <div class="numbertext">5 / 5</div>
+	  <img src="img/photography-11.jpg" style="width:100%" alt="">
+	  <div class="text">Nakhipot Street Fest</div>
+	</div>
+	<a class="prev" onclick="plusSlides(-1)">&lt;</a>
+	<a class="next" onclick="plusSlides(1)">&gt;</a>
+	</div>
+	<br>
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+	<br>
+	<br>
+	<article>
+		<h3>Subscribe to Ujjwal’s Field News:</h3><br>
+		<p class="article-text">Share in the adventure, right from your phone. When you sign up for Field Notes, you’ll get monthly updates and stories from me, photographs, and photography tips. And you’ll also get five phone wallpapers with some of my favourite animal encounters—so you can explore the world with me, no matter where you are.</p>
+		<div class="newsletter">
+		<form>					
+		  <input type="text" id="fname" name="fname" placeholder="First Name" style="max-width: 600px;">
+		  <input type="text" id="lname" name="lname" placeholder="Last Name" style="max-width: 600px;">
+		  <input type="text" id="email" name="email" placeholder="Email" style="max-width: 600px;">	
+		  <button class="submit" type="submit" style="">Join the adventure!</button>
+		</form>		
+	</div>	
+	</article>
+	<footer>
+		<p>&copy; Ujjwal Rana Photography 2020</p>
+	</footer>
+	<script>
+		/*---Slideshow start---*/
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");		  
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";  
+		  }		  
+		  slides[slideIndex-1].style.display = "block"; 		  
+		}
+		/*---Slideshow end---*/			
+	</script>
+	<script src="script.js"></script>		
+</body>
+</html>

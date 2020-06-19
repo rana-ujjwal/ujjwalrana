@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ujjwal Rana - Contact</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />	
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+	<link rel="shortcut icon" type="image/png" href="img/camera-icon.png"/>	
+</head>
+<body>
+	<button id="toggle" onclick="myFunction()"><i class="fa fa-moon-o" aria-hidden="true"></i></button>	
+	<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+	<nav class="navbar">
+		<div class="logo">
+            <a href="index.html">
+            	<img src="img/logo.png" alt="">
+            </a>
+        </div>
+		<a href="#" class="toggle-button">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</a>
+		<div class="navbar-links">
+			<ul>
+				<li><a href="index.html">HOME</a></li>	
+				<li><a href="portfolio.html">PORTFOLIO</a></li>
+				<li><a href="contact.html" class="active">CONTACT</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="shop.html">SHOP</a></li>
+			</ul>
+		</div>
+	</nav>
+	<main>		
+		<div class="container">
+			<form>
+				<h2>Contact</h2><br>
+				<h3>Business Inquiries</h3><br>
+				<label>First Name </label><br>				
+				<input type="text" name="fname" placeholder="Your Name..."><br>
+				<label>Last Name </label><br>
+				<input type="text" name="lname" placeholder="Your Last Name..."><br>
+				<label>Subject </label><br>
+				<input type="text" name="subject" placeholder="Subject..."><br>
+				<label>Email </label><br>
+				<input type="email" name="email" placeholder="Your Email..."><br>
+				<label>Message</label><br>
+				<textarea id="subject" placeholder="Write your message...." style="height: 200px"></textarea><br>
+				<button class="submit" type="submit" onclick="alert('Thank you for your inquiry')">Submit</button>
+			</form>
+		</div>
+	</main>	
+	<footer>
+	<p>&copy; Ujjwal Rana Photography 2020</p>
+	</footer>
+	<script src="script.js"></script>			
+</body>
+</html>
